@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+</head>
+<body>
+    <center>
+        <h1>Webpage_data_retriving</h1>
+        <table border="2px">
+            <tr>
+                <td>Webpage ID</td>
+                <td>Topic_Name</td>
+                <td>Name</td>
+                <td>url</td>
+            </tr>
+            {% for i in webpage %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.topic_name}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.url}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
